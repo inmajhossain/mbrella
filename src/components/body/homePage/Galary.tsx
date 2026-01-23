@@ -6,32 +6,32 @@ import React, { useEffect, useRef } from "react";
 export default function PhotoGallery() {
   const photos = [
     {
-      url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+      src: "/galary/men.webp",
       link: "#",
       category: "Men",
     },
     {
-      url: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800",
+      src: "/galary/women.webp",
       link: "#",
       category: "Women",
     },
     {
-      url: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800",
+      src: "/galary/kids.webp",
       link: "#",
       category: "Kids",
     },
     {
-      url: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800",
+      src: "/galary/cap.webp",
       link: "#",
       category: "CAP",
     },
     {
-      url: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800",
+      src: "/galary/mbrellax.webp",
       link: "#",
       category: "Mbrella X Influencer",
     },
     {
-      url: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800",
+      src: "/galary/umbrella.webp",
       link: "#",
       category: "U by Mbrella",
     },
@@ -97,7 +97,7 @@ export default function PhotoGallery() {
                 <div className="relative">
                   <Link href={photo.link} className="block">
                     <Image
-                      src={photo.url}
+                      src={photo.src}
                       alt={`Photo ${index + 1}`}
                       className="rounded-sm w-full md:w-90 lg:w-155 h-64 sm:h-80 md:h-90 lg:h-155 object-cover hover:scale-102 transition-transform duration-500 ease-out"
                       width={620}
