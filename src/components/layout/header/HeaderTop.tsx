@@ -156,7 +156,7 @@ function HeaderTop() {
           <h3 className="text-white">|</h3>
 
           {/* Country Dropdown */}
-          <div className="relative" ref={countryRef}>
+          <div className="z-51 relative" ref={countryRef}>
             <button
               onClick={() => setIsCountryOpen(!isCountryOpen)}
               className="flex flex-row items-center gap-1 hover:opacity-80 transition-opacity cursor-pointer"

@@ -254,10 +254,8 @@ export default function MbrellaHeader() {
   return (
     <>
       <header
-        className={`z-50 transition-all duration-300  fixed left-0  right-0 ${
-          isScrolled
-            ? "bg-[#6e2121]/50 backdrop-blur-2xl top-0"
-            : "bg-[#383838] "
+        className={`z-50 transition-all duration-800  fixed left-0  right-0 ${
+          isScrolled ? "bg-black/20 backdrop-blur-xl top-0" : "bg-[#383838] "
         }`}
       >
         <div className="mx-auto px-4 max-w-360">
@@ -424,7 +422,7 @@ export default function MbrellaHeader() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 z-50 lg:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 z-53 lg:hidden transition-opacity duration-300 ${
           mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
@@ -439,7 +437,7 @@ export default function MbrellaHeader() {
 
         {/* Main Categories */}
         <div
-          className={`absolute top-0 left-0 bottom-0 w-80 bg-white transform transition-transform duration-300 ${
+          className={` absolute top-25 left-0 bottom-0 w-100 bg-white transform transition-transform duration-800 ${
             mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -476,7 +474,7 @@ export default function MbrellaHeader() {
         {/* Subcategories */}
         {mobileActiveCategory && (
           <div
-            className={`absolute top-0 right-0 bottom-0 w-80 bg-white transform transition-transform duration-300 ${
+            className={`absolute top-25 right-0 bottom-0 w-full bg-white transform transition-transform duration-800 ${
               mobileActiveCategory ? "translate-x-0" : "translate-x-full"
             }`}
           >
@@ -499,8 +497,8 @@ export default function MbrellaHeader() {
                   onClick={() => setMobileActiveSubcategory(sub)}
                   className="flex justify-between items-center hover:bg-gray-50 px-4 py-3 w-full"
                 >
-                  <span className="font-medium text-gray-900">{sub.name}</span>
-                  <ChevronRight size={20} />
+                  <span className="font-medium text-amber-600">{sub.name}</span>
+                  <ChevronRight size={24} />
                 </button>
               ))}
             </div>
@@ -510,18 +508,18 @@ export default function MbrellaHeader() {
         {/* Items */}
         {mobileActiveSubcategory && mobileActiveCategory && (
           <div
-            className={`absolute top-0 left-0 bottom-0 w-80 bg-white transform transition-transform duration-300 ${
+            className={`absolute top-25 left-0 bottom-0 w-full bg-white transform transition-transform duration-800 ${
               mobileActiveSubcategory ? "translate-x-0" : "-translate-x-full"
             }`}
           >
             <div className="flex justify-between items-center p-4 border-gray-200 border-b">
               <button
                 onClick={() => setMobileActiveSubcategory(null)}
-                className="text-gray-500 hover:text-gray-700"
+                className="text-black"
               >
                 <ChevronRight size={24} className="rotate-180" />
               </button>
-              <h2 className="font-bold text-gray-900 text-xl">
+              <h2 className="font-bold text-black text-xl">
                 {mobileActiveSubcategory.name}
               </h2>
               <div className="w-6" />
@@ -531,7 +529,7 @@ export default function MbrellaHeader() {
                 <Link
                   key={item}
                   href={`/${mobileActiveCategory.name.toLowerCase()}/${mobileActiveSubcategory.name.toLowerCase()}/${item.toLowerCase()}`}
-                  className="block hover:bg-gray-50 px-4 py-3 text-gray-700"
+                  className="block hover:bg-gray-50 px-4 py-3 text-amber-600"
                 >
                   {item}
                 </Link>
