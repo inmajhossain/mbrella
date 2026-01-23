@@ -99,7 +99,7 @@ export default function PhotoGallery() {
                     <Image
                       src={photo.src}
                       alt={`Photo ${index + 1}`}
-                      className="rounded-sm w-full md:w-90 lg:w-155 h-64 sm:h-80 md:h-90 lg:h-155 object-cover hover:scale-102 transition-transform duration-500 ease-out"
+                      className="bg-cover rounded-sm md:w-90 lg:w-155 min-w-85 h-64 sm:h-80 md:h-90 lg:h-155 object-cover object-top md:object-cover hover:scale-102 transition-transform duration-500 ease-out"
                       width={620}
                       height={620}
                     />

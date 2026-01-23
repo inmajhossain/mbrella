@@ -437,7 +437,7 @@ export default function MbrellaHeader() {
 
         {/* Main Categories */}
         <div
-          className={` absolute top-25 left-0 bottom-0 w-100 bg-white transform transition-transform duration-800 ${
+          className={` absolute top-10 left-0 bottom-0 w-100 bg-white transform transition-transform duration-800 ${
             mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
