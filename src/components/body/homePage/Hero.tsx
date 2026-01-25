@@ -39,7 +39,7 @@ export default function HeroCarousel() {
   };
 
   return (
-    <section className="relative lg:mt-9 w-full h-44 md:h-88 lg:h-screen overflow-hidden">
+    <section className="relative mt-10.75 lg:mt-19.75 w-full h-44 md:h-88 lg:h-screen overflow-hidden">
       {/* Slides */}
       <div
         className="flex h-full transition-transform duration-700 ease-in-out"

@@ -1,44 +1,3 @@
-// import Link from "next/link";
-// import { BsShopWindow } from "react-icons/bs";
-// import { FaAccusoft, FaArrowDown } from "react-icons/fa";
-// import { FaArrowDown19, FaArrowDown91, FaLocationDot } from "react-icons/fa6";
-// import { MdKeyboardArrowDown } from "react-icons/md";
-// import { RiAccountCircleLine } from "react-icons/ri";
-// import "flag-icons/css/flag-icons.min.css";
-
-// function HeaderTop() {
-//   return (
-//     <div className="flex bg-amber-400 mx-auto w-full h-10.75">
-//       <div className="flex flex-row justify-between items-center mx-auto lg:w-360 text-black">
-//         <h3 className="hidden lg:flex">
-//           For any querires or asking, please contact{" "}
-//           <span className="font-semibold text-blue-800">(+880) 1515212670</span>
-//         </h3>
-//         <div className="flex flex-row justify-around items-center gap-3 font-sans">
-//           <h3 className="flex items-center gap-1">
-//             {" "}
-//             <RiAccountCircleLine size={20} color="blue" /> Account{" "}
-//             <MdKeyboardArrowDown size={24} color="blue" />
-//           </h3>
-//           <h3 className="text-white">|</h3>
-//           <Link href="#" className="flex items-center gap-1">
-//             {" "}
-//             <BsShopWindow size={16} color="blue" />
-//             Outlets
-//           </Link>
-//           <h3 className="text-white">|</h3>
-//           <h3 className="flex flex-row items-center gap-1">
-//             <FaLocationDot size={16} color="blue" /> BGD{" "}
-//             <MdKeyboardArrowDown size={24} color="blue" />
-//           </h3>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default HeaderTop;
-
 "use client";
 
 import Link from "next/link";
@@ -98,7 +57,7 @@ function HeaderTop() {
   };
 
   return (
-    <div className="z-51 flex bg-amber-400 mx-auto w-full h-10.75">
+    <div className="top-0 z-51 fixed flex bg-amber-400 mx-auto w-full h-10.75">
       <div className="flex flex-row justify-between items-center mx-auto lg:w-360 text-black">
         <div className="hidden lg:flex flex-row justify-around items-center gap-5">
           <h3 className="font-sans">

@@ -84,7 +84,7 @@ export default function PhotoGallery() {
       <div className="mx-auto max-w-7xl">
         <div className="flex lg:flex-row flex-col gap-6">
           {/* Photos Grid */}
-          <div className="flex md:flex-row flex-col flex-wrap flex-1 justify-between items-center gap-6 md:gap-3 md:gap-y-9">
+          <div className="flex flex-row flex-wrap flex-1 justify-between items-center gap-6 gap-y-9 md:gap-3 md:gap-y-9">
             {photos.map((photo, index) => (
               <div
                 key={index}
@@ -99,14 +99,14 @@ export default function PhotoGallery() {
                     <Image
                       src={photo.src}
                       alt={`Photo ${index + 1}`}
-                      className="bg-cover rounded-sm md:w-90 lg:w-155 min-w-85 h-64 sm:h-80 md:h-90 lg:h-155 object-cover object-top md:object-cover hover:scale-102 transition-transform duration-500 ease-out"
+                      className="bg-cover rounded-sm max-w-40 md:max-w-88 lg:max-w-155 h-auto sm:h-80 md:h-88 lg:h-155 object-fit md:object-cover hover:scale-102 transition-transform duration-500 ease-out"
                       width={620}
                       height={620}
                     />
                   </Link>
                   <Link
                     href={photo.link}
-                    className="right-2 -bottom-3 absolute bg-blue-900 hover:bg-black shadow-lg px-4 md:px-8 py-2 rounded-sm font-sans text-md text-white transition-colors duration-500"
+                    className="right-2 -bottom-3 absolute bg-blue-900 hover:bg-black shadow-lg px-2 md:px-8 py-2 rounded-sm font-sans text-md text-white text-center transition-colors duration-500"
                     onClick={e => e.preventDefault()}
                   >
                     {photo.category}

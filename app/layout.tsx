@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/src/components/layout/header/Header";
 import HeaderTop from "@/src/components/layout/header/HeaderTop";
 import Footer from "@/src/components/layout/footer/Footer";
+import TubesCursor from "@/src/components/layout/cursor/TubesCursor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <TubesCursor />
         <HeaderTop />
         <Header />
         {children}

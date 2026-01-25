@@ -9,6 +9,7 @@ import {
   ChevronRight,
   ChevronDown,
 } from "lucide-react";
+import HeaderTop from "./HeaderTop";
 
 // Types
 interface MenuItem {
@@ -254,8 +255,10 @@ export default function MbrellaHeader() {
   return (
     <>
       <header
-        className={`z-50 transition-all duration-800  fixed left-0  right-0 ${
-          isScrolled ? "bg-black/20 backdrop-blur-xl top-0" : "bg-[#383838] "
+        className={`z-1 transition-all duration-800 fixed left-0  right-0 ${
+          isScrolled
+            ? "bg-black/20 backdrop-blur-xl top-0"
+            : "bg-[#383838] top-10.75 "
         }`}
       >
         <div className="mx-auto px-4 max-w-360">
