@@ -4,7 +4,9 @@ import "./globals.css";
 import Header from "@/src/components/layout/header/Header";
 import HeaderTop from "@/src/components/layout/header/HeaderTop";
 import Footer from "@/src/components/layout/footer/Footer";
+// import NeonBackground from "@/src/components/layout/neon/NeonBackground";
 import TubesCursor from "@/src/components/layout/cursor/TubesCursor";
+// import FireworksBackground from "@/src/components/layout/fireworks/FireworksBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +33,23 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* <NeonBackground
+          config={{
+            colors: ["#ff00ff", "#00ffff", "#ffff00"], // কাস্টম কালার
+            neonSize: 3, // ছোট নিয়ন সাইজ
+            timeScale: 5, // ধীর গতি
+          }}
+        /> */}
+        {/* <FireworksBackground
+          blendMode="screen"
+          intensity={0.8}
+          config={{
+            count: 30,
+            spawnRate: 0.3,
+            explosionSize: 8,
+            intensity: 2.5,
+          }}
+        /> */}
         <TubesCursor />
         <HeaderTop />
         <Header />
